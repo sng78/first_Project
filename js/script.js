@@ -36,6 +36,13 @@ for (let i = 1; i < +numberOfFilms + 1; i++) {
     }
 }
 
+/* // Способ 2:
+for (let i = 1; i < +numberOfFilms + 1; i++) {
+    const a = prompt('Один из просмотренных последних фильмов?', ''),
+          b = prompt('На сколько оцените его?', '');
+    (a != null && b != null && a != '' && b != '' && a.length < 50) ? (personalMovieDB.movies[a] = b, console.log('done')) : (i--, console.log('error'));
+} */
+
 if (personalMovieDB.count < 10) {
     console.log('Просмотрено довольно мало фильмов');
 } else if (personalMovieDB.count <= 30) {
